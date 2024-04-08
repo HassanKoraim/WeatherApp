@@ -1,0 +1,22 @@
+﻿@using WeatherApp.Models
+@model CityWeather
+
+<!DOCTYPE html5>
+<html>
+<head>
+    <title>WeatherApp</title>
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="page-content">
+        <div>
+            <div class="box flex flex-borderless">
+                <h2>@Model.CityName</h2>
+                <p>Temperature: @Model.TemperatureFahrenheit</p>
+                <p>Time: @Model.DateAndTime</p>
+            </div>
+        </div>
+    </div>      
+
+</body>
+</html>
